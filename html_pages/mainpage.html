@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <title>Welcome</title>
+    <link rel="stylesheet" href="..\css_styles\main_page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@500;700&family=Public+Sans:wght@800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belgrano&family=Expletus+Sans:wght@500;700&family=Public+Sans:wght@800&display=swap" rel="stylesheet">
+  </head>
+  <body onload="Writer()">
+    
+    <div class="box">
+      <div id="top-bar">
+        <img class="dp" src="../resources/images/vijay.jpg" alt="display image">
+      </div>
+      <div class="longscrollbox">
+        <div id="icons-container">
+          <img src="../resources/images/placeholder.png" alt="loading img">
+          <img src="../resources/images/placeholder.png" alt="loading img">
+          <img src="../resources/images/placeholder.png" alt="loading img">
+        </div>
+      </div>
+      <div id="main-content-box">
+        <div id="midtop">
+          <div id="Tittle" style="font-family: 'Expletus Sans'; font-size: 200%;">VIJAY KANTH</div>
+          <div class="texting" id="inputtext">
+            <p id="entertext"></p>
+            <input id="input-bar" type="text">
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="box">
+      
+      <div class="container about">
+        
+      </div>
+    </div>
+    <div class="box">
+      <div class="container about">
+        
+      </div>
+    </div>
+    <div class="box">
+      <div class="container about">
+        
+      </div>
+    </div>
+    <script>
+      var i = 0;
+      var txt = 'Hi there! Welcome to my page.';
+      var speed = 60;
+      
+      function Writer() {
+        if (i < txt.length) {
+          document.getElementById("entertext").innerHTML += txt.charAt(i);
+          i++;
+          setTimeout(Writer, speed);
+        }
+      }
+      </script>
+  </body>
+</html>
